@@ -1,6 +1,9 @@
 # PySpark Stock Analysis Application
 This project involves analyzing stock market data using PySpark to handle large datasets efficiently and perform comprehensive data analysis.
 
+![image](https://github.com/user-attachments/assets/2b9c9dbe-e18f-4f16-b1cd-6b7f4a996294)
+
+
 ## Project Overview
 The stock market generates vast amounts of data daily, making it essential to use scalable tools for analysis. This project leverages PySpark, a powerful distributed computing framework, to process and analyze stock data, providing insights into market trends and stock performance.
 
