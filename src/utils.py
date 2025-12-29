@@ -1,10 +1,10 @@
 #--------------------- processing ------------------------
 
-import findspark
+"""import findspark
 findspark.init()
 
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.master("local[*]").getOrCreate()
+spark = SparkSession.builder.master("local[*]").getOrCreate()"""
 
 from warnings import filters
 import os
@@ -424,4 +424,5 @@ def add_trace_plot(dataset, column, fig, name):
   df_pandas = dataset.toPandas()
   fig.add_trace(go.Scatter(x=df_pandas['Date'], y=df_pandas[column], mode='lines', name=name))
   return fig
+
 
