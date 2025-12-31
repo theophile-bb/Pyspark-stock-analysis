@@ -43,9 +43,10 @@ This function allow us to load the file into a spark dataframe.
 """
 
 def read_file(folder,file):
-  name = os.path.join(folder, file)
-  df = spark.read.csv(name,inferSchema=True, header =True)
-  return df
+    spark = create_spark_session()
+    name = os.path.join(folder, file)
+    df = spark.read.csv(name,inferSchema=True, header =True)
+    return df
 
 """
 Function : calculate_time_span(dataset)
@@ -436,6 +437,7 @@ def add_trace_plot(dataset, column, fig, name):
   df_pandas = dataset.toPandas()
   fig.add_trace(go.Scatter(x=df_pandas['Date'], y=df_pandas[column], mode='lines', name=name))
   return fig
+
 
 
 
