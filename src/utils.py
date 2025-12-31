@@ -417,9 +417,9 @@ Usage :
 Generate a plotly graph object.
 """
 
-def plot_stock():
+def plot_stock(title):
   fig = go.Figure()
-  fig.update_layout(title='Stocks over time span', xaxis_title='Date', yaxis_title='Close')
+  fig.update_layout(title=title, xaxis_title='Date', yaxis_title='Close')
 
   return fig
 
@@ -442,6 +442,7 @@ def add_trace_plot(dataset, column, fig, name):
   df_pandas = dataset.toPandas()
   fig.add_trace(go.Scatter(x=df_pandas['Date'], y=df_pandas[column], mode='lines', name=name))
   return fig
+
 
 
 
