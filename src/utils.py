@@ -8,14 +8,19 @@ spark = SparkSession.builder.master("local[*]").getOrCreate()"""
 
 from warnings import filters
 import os
+
+import numpy as np
+
 from pyspark.ml.stat import Correlation
 from pyspark.ml.feature import VectorAssembler
 from pyspark.sql.functions import col, year, month, weekofyear, avg, to_date
 from pyspark.sql.window import Window
 from pyspark.sql import functions as F
+from pyspark.sql import SparkSession
+
 import plotly.express as px
 import plotly.graph_objects as go
-from pyspark.sql import SparkSession
+
 
 """Create  a spark session"""
 def create_spark_session(
@@ -437,6 +442,7 @@ def add_trace_plot(dataset, column, fig, name):
   df_pandas = dataset.toPandas()
   fig.add_trace(go.Scatter(x=df_pandas['Date'], y=df_pandas[column], mode='lines', name=name))
   return fig
+
 
 
 
