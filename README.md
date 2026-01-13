@@ -3,7 +3,7 @@
 [![Colab](https://img.shields.io/badge/Open%20in-Colab-blue?logo=googlecolab)](https://colab.research.google.com/github/theophile-bb/Pyspark-stock-analysis/blob/main/Pyspark_stock_analysis_app.ipynb)
 
 This repository contains a PySpark project designed to perform scalable analysis of stock market data using distributed computing.  
-The notebook and utilities demonstrate data ingestion, transformation, feature engineering, and visual insights using PySpark DataFrames and modular functions.
+The notebook and utils provide modular functions to demonstrate data ingestion, transformation, feature engineering, and visual insights using PySpark.
 
 ![image](https://github.com/user-attachments/assets/2b9c9dbe-e18f-4f16-b1cd-6b7f4a996294)
 
@@ -52,6 +52,8 @@ $ cd Pyspark-stock-analysis
 $ pip install -r requirements.txt
 ```
 
+---
+
 ## Data
 
 The dataset used in this project includes historical stock prices and related financial metrics from major American companies. Key features typically are:
@@ -68,6 +70,8 @@ The dataset used in this project includes historical stock prices and related fi
 
 • Volume: Number of shares traded.
 
+---
+
 ## Notebook
 
 The main analysis is in: Pyspark_stock_analysis_app.ipynb
@@ -83,6 +87,7 @@ The main analysis is in: Pyspark_stock_analysis_app.ipynb
 
 - Visulization for performance monitoring
 
+---
 
 ## Data Exploration function example 
 
