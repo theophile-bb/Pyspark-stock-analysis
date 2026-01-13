@@ -30,16 +30,6 @@ Pyspark_stock_analysis_app/ <br>
 
 ---
 
-
-## 📋 Prerequisites
-
-This project requires:
-
-- Python 3.10+
-- A working Python environment (venv, conda, etc.)
-
----
-
 ## 📋 Prerequisites
 
 This project requires:
