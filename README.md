@@ -11,22 +11,26 @@ The notebook and utils provide modular functions to demonstrate data ingestion, 
 
 ## Project Structure
 
-Pyspark_stock_analysis_app/ <br>
-├── Data/ <br>
-│ ├── AMAZON.csv  <br>
-│ ├── APPLE.csv  <br>
-│ ├── FACEBOOK.csv  <br>
-│ ├── GOOGLE.csv  <br>
-│ ├── MICROSOFT.csv  <br>
-│ ├── TESLA.csv  <br>
-│ ├── ZOOM.csv  <br>
-├── src/ <br>
-│ ├── init.py <br>
-│ └── utils.py # Reusable functions for data & model <br>
-├── Pyspark_stock_analysis_app.ipynb # Main analysis notebook <br>
-├── requirements.txt <br>
-├── .gitignore <br>
-└── README.md <br>
+Pyspark_stock_analysis_app/<br>
+├── 📂 data/                <br>
+│   ├── AMAZON.csv<br>
+│   ├── APPLE.csv<br>
+│   ├── FACEBOOK.csv<br>
+│   ├── GOOGLE.csv<br>
+│   ├── MICROSOFT.csv<br>
+│   ├── TESLA.csv<br>
+│   └── ZOOM.csv<br>
+│   <br>
+├── 📂 src/                <br>
+│   ├── __init__.py<br>
+│   └── utils.py           <br>
+| <br>
+├── 📂 notebooks/          <br>
+│   └── analysis.ipynb     <br>
+| <br>
+├── .gitignore             <br>
+├── README.md              <br>
+└── requirements.txt       <br>
 
 ---
 
